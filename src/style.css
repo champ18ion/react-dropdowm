@@ -27,7 +27,7 @@ p {
   position: relative;
 }
 
-/* Dropdown styles (use the same styles as in the previous example) */
+/* Dropdown styles  */
 
 .dropdown-container {
   position: relative;
@@ -47,7 +47,7 @@ p {
 
 .dropdown-menu {
   position: absolute;
-  top: calc(100% + 2px);
+  /* top: calc(100% + 1px); */
   left: 0;
   z-index: 1;
   background-color: #FFFFFF;

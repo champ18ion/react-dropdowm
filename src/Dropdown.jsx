@@ -1,19 +1,25 @@
 import React, { useState } from 'react';
 
 const Dropdown = ({ items }) => {
+  // useState hook to manage the state of the dropdown
   const [isOpen, setIsOpen] = useState(false);
 
+  // function to handle the click on an item in the dropdown
   const handleItemClick = (item) => {
     setIsOpen(false);
-    // Do something with selected item
-    console.log(item);
   };
 
+  // return the dropdown component
   return (
-    <div className="dropdown" onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)}>
-      <button className={isOpen==false?"dropdown-toggle" :"dropdown-toggle open"} type="button">
+    <div className="dropdown"
+      onMouseEnter={() => setIsOpen(true)}
+      onMouseLeave={() => setIsOpen(false)}
+    >
+      {/* dropdown toggle button */}
+      <button className={isOpen ? "dropdown-toggle open" : "dropdown-toggle"} type="button">
         Open Dropdown
       </button>
+      {/* dropdown menu */}
       {isOpen && (
         <div className="dropdown-menu">
           {items.map((item) => (
