@@ -3,7 +3,7 @@ import Dropdown from './Dropdown';
 import './style.css';
 
 function App() {
-  const items = ['Chun lo mujhe ', ' ya mujhko chuno', 'chun lo mujhe fark kya hai','jo chun lo janu','guru tumko manu','chalo ye bhi vaada ha'];
+  const items = ['option 1 ','optiion 2','option 3 '];
 
   return (
     <div className="app-container">
