@@ -1,0 +1,109 @@
+h1,
+p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.app-header {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #444444;
+}
+
+.dropdown-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+/* Dropdown styles (use the same styles as in the previous example) */
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-toggle {
+  padding: 10px 20px;
+  background-color: #F6F6F6;
+  border: none;
+  border-radius: 5px;
+  color: #444444;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  z-index: 1;
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  min-width: 200px;
+  padding: 0;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #444444;
+  text-align: left;
+  background-color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.dropdown-item:hover {
+  background-color: #F6F6F6;
+}
+
+.dropdown-item:first-of-type {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.dropdown-item:last-of-type {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.dropdown-item:not(:last-of-type) {
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.dropdown-toggle::after {
+  content: '';
+  display: inline-block;
+  margin-left: 10px;
+  width: 0;
+  height: 0;
+  border-top: 6px solid #333;
+  border-right: 6px solid transparent;
+  border-bottom: 0 solid transparent;
+  border-left: 6px solid transparent;
+  vertical-align: middle;
+  transition: transform 0.2s ease-in-out;
+}
+
+.dropdown-toggle.open::after {
+  transform: rotate(180deg);
+  margin-left: 5px;
+}
+
